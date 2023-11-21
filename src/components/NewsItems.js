@@ -5,7 +5,7 @@ export class NewsItems extends Component {
         let { title, description, imgUrl, newsUrl, author, publishedAt, source } = this.props;
         return (
             <div>
-                <div className="card">
+                <div className="card my-2">
                 <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{zIndex:'1', left:'90%'}} >{source}</span>
                     <img src={!imgUrl ? "https://images.wsj.net/im-885392/social" : imgUrl} className="card-img-top" alt="..." />
                     <div className="card-body grid gap-3">
